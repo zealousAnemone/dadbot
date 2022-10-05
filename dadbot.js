@@ -16,6 +16,7 @@ const comments = new CommentStream(client, {
 });
 
 comments.on('item', (item) => {
+  console.log(item.body);
   const arr = item.body.split(' ');
   if (arr[0] === "I'm" && arr.length === 2) {
     let word = arr[1];
