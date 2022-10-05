@@ -10,9 +10,8 @@ const client = new Snoowrap({
   password: process.env.PASSWORD,
 });
 
-console.log('Another test');
 const comments = new CommentStream(client, {
-  subreddit: 'trainingground4bots',
+  subreddit: 'testingground4bots',
   limit: 25,
 });
 
