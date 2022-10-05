@@ -13,6 +13,7 @@ const client = new Snoowrap({
 const comments = new CommentStream(client, {
   subreddit: 'testingground4bots',
   limit: 25,
+  pollTime: 10000,
 });
 
 comments.on('item', (item) => {
