@@ -11,7 +11,7 @@ const client = new Snoowrap({
 });
 
 const comments = new CommentStream(client, {
-  subreddit: 'jokes',
+  subreddit: 'trainingground4bots',
   limit: 25,
 });
 
